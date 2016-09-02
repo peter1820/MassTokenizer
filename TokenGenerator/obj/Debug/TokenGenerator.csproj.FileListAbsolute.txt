@@ -1,0 +1,12 @@
+E:\Projects\TokenGenerator\TokenGenerator\bin\Debug\ServiceStack.Text.dll
+E:\Projects\TokenGenerator\TokenGenerator\bin\Debug\TokenGenerator.exe.config
+E:\Projects\TokenGenerator\TokenGenerator\bin\Debug\TokenGenerator.exe
+E:\Projects\TokenGenerator\TokenGenerator\bin\Debug\TokenGenerator.pdb
+E:\Projects\TokenGenerator\TokenGenerator\bin\Debug\ServiceStack.Text.xml
+E:\Projects\TokenGenerator\TokenGenerator\obj\Debug\TokenGenerator.csprojResolveAssemblyReference.cache
+E:\Projects\TokenGenerator\TokenGenerator\obj\Debug\TokenGenerator.exe
+E:\Projects\TokenGenerator\TokenGenerator\obj\Debug\TokenGenerator.pdb
+E:\Projects\TokenGenerator\TokenGenerator\bin\Debug\TokenGenerator.exe.manifest
+E:\Projects\TokenGenerator\TokenGenerator\bin\Debug\TokenGenerator.application
+E:\Projects\TokenGenerator\TokenGenerator\obj\Debug\TokenGenerator.exe.manifest
+E:\Projects\TokenGenerator\TokenGenerator\obj\Debug\TokenGenerator.application
