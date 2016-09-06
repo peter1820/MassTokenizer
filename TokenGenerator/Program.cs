@@ -4,7 +4,6 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    using System.Net;
 
     /// <summary>
     /// The main Program class.
@@ -27,7 +26,7 @@
 
             var tokenObjects = ReadCsv(args[0], isCepToken);
             var tokens = EncryptObjects(tokenObjects, isCepToken);
-            WriteCsv(args[1], tokens, isCepToken);
+            WriteCsv(args[1], tokens);
         }
 
         /// <summary>
@@ -47,8 +46,7 @@
         /// </summary>
         /// <param name="fileName">The output file name.</param>
         /// <param name="tokens">The list of tokens.</param>
-        /// <param name="isCepToken">The token type.</param>
-        private static void WriteCsv(string fileName, IEnumerable<string> tokens, bool isCepToken)
+        private static void WriteCsv(string fileName, IEnumerable<string> tokens)
         {
             var path = Path.GetFullPath(fileName);
 
@@ -60,7 +58,7 @@
 
                 foreach (var token in tokens)
                 {
-                    writer.WriteLine(isCepToken ? WebUtility.UrlEncode(token) : token);
+                    writer.WriteLine(token);
                 }
 
                 writer.Flush();
