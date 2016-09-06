@@ -6,7 +6,7 @@
     /// <summary>
     /// The token class.
     /// </summary>
-    public class Token
+    public class Token : IToken
     {
         /// <summary>
         /// Gets or sets the client ID.

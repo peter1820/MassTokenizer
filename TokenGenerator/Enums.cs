@@ -44,6 +44,47 @@
     }
 
     /// <summary>
+    /// The old user country list.
+    /// </summary>
+    public enum EUserCountry
+    {
+        /// <summary>
+        /// The default value.
+        /// </summary>
+        None,
+
+        /// <summary>
+        /// The USA.
+        /// </summary>
+        USA,
+
+        /// <summary>
+        /// Canada code.
+        /// </summary>
+        CAN,
+
+        /// <summary>
+        /// Australia code.
+        /// </summary>
+        AUS,
+
+        /// <summary>
+        /// New-Zealand code.
+        /// </summary>
+        NZL,
+
+        /// <summary>
+        /// United kingdom code.
+        /// </summary>
+        GBR,
+
+        /// <summary>
+        /// Ireland code.
+        /// </summary>
+        IRL
+    }
+
+    /// <summary>
     /// Enumerable containing all possible authentication types.
     /// </summary>
     public enum AuthenticationType
@@ -65,7 +106,7 @@
     }
 
     /// <summary>
-    /// Class containing enum extension methods.
+    /// Class containing enumerable extension methods.
     /// </summary>
     public static class EnumExtensions
     {
@@ -88,6 +129,7 @@
             {
                 returnVal = defaultValue;
             }
+
             return returnVal;
         }
 

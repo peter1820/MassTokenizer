@@ -1,0 +1,20 @@
+syntax: glob
+packages/
+
+*.suo
+*.dist
+*.tmp
+*.user
+[Bb]in
+[Dd]ebug*/
+obj/
+.svn/
+*.[Pp]ublish.xml
+*.bak
+*.log
+*.rej
+*.orig
+Logs/
+*.Cache
+TestResult.xml
+reports/*

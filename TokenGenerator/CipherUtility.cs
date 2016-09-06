@@ -14,11 +14,14 @@
         /// Encrypts the given value using the provided symmetric algorithm, password and salt.
         /// </summary>
         /// <param name="value">The original value.</param>
+        /// <param name="isCepToken">A value indicating whether the token is from CEP.</param>
         /// <returns>The encrypted value.</returns>
-        public string Encrypt(string value)
+        public string Encrypt(string value, bool isCepToken)
         {
-            DeriveBytes rgb = new Rfc2898DeriveBytes(Settings.Default.WrKey, Encoding.Unicode.GetBytes(Settings.Default.WrSalt));
-
+            DeriveBytes rgb = isCepToken
+                ? new Rfc2898DeriveBytes(Settings.Default.CepKey, Encoding.Unicode.GetBytes(Settings.Default.CepSalt))
+                : new Rfc2898DeriveBytes(Settings.Default.WrKey, Encoding.Unicode.GetBytes(Settings.Default.WrSalt));
+            
             SymmetricAlgorithm algorithm = new RijndaelManaged();
 
             var rgbKey = rgb.GetBytes(algorithm.KeySize >> 3);
